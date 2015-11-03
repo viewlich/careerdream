@@ -1,0 +1,133 @@
+@charset "utf-8";
+@import "reset.css";
+/* -------------------------------------------------
+ * CSS Document
+ * jobtips.css
+ * -------------------------------------------------
+*/
+.jobtips_box{
+	width: 920px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.jobtips_left{
+	width: 200px;
+	float: left;
+}
+.jobtips_left ul li a{
+	padding: 8px 0;
+	display: block;
+	font-size: 16px;
+	color: #999;
+}
+.jobtips_left ul li a.active,.jobtips_left ul li a:hover{
+	color: #7399c6;
+	background: url(../images/jobtips/chevron-small-right.png) no-repeat right;
+}
+.jobtips_right{
+	width: 700px;
+	float: right;
+}
+.jobtips_list{
+	overflow: hidden;
+}
+.jobtips_list dl{
+	border-bottom: 1px solid #e7e7e7;
+	padding-top:20px;
+	padding-bottom: 15px;
+	overflow: hidden;
+	*padding-top: expression(this.previousSibling==null?"0":"20px");
+}
+.jobtips_list dl:first-child{
+	padding-top: 0;
+}
+.jobtips_list dl dt{
+	float: left;
+	max-width: 164px;
+	width: 158px;
+	height: 98px;
+	overflow: hidden;
+	border:1px solid #7399c6;
+}
+.jobtips_list dl dt img:hover{
+	opacity: 0.8;
+	-webkit-transform: scale(1.2);
+ 	transition: all 0.8s ease-in-out;
+}
+.jobtips_list dl dd{
+	float: right;
+	line-height: 26px;
+	max-width: 480px;
+}
+.jobtips_list dl dd h2{
+	margin: 0;
+	padding: 0;
+	line-height: 26px;
+}
+.jobtips_list dl dd h2 a{
+	color: #7399c6;
+	font-size: 16px;
+}
+.jobtips_list dl dd p{
+	color: #333;
+}
+.jobtips_list dl dd span{
+	color: #999;
+}
+.jobtips_list dl dd span strong,.jobtipcont span strong{
+	padding-left: 20px;
+	font-weight: normal;
+	background: url(../images/jobtips/tag.png) no-repeat left;
+}
+.jobtips_list dl dd span em,.jobtipcont span em{
+	margin-left: 30px;
+	font-style: normal;
+	padding-left: 20px;
+	background: url(../images/jobtips/loogs.png) no-repeat left;
+}
+.jobtips_list dl dd span a{
+	float: right;
+	text-decoration: underline;
+	color: #7399c6;
+}
+.jobtips_list dl dd a:hover{
+	color: #008fd0;
+}
+.jobtipcont span{
+	overflow: hidden;
+	border-bottom: 1px solid #e7e7e7;
+	padding-bottom: 10px;
+	display: block;
+}
+.jobtipcont span img{
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	border:2px solid #7399c6;
+	margin-bottom: 10px;
+}
+.jobtipcont pre{
+	margin-top: 20px;
+}
+.jobtipcont p em{	
+	color: #7399c6;
+	margin-top: 20px;
+	font-style: normal;
+	*text-align: expression(this.nextSibling==null?"right":"left");
+}
+.jobtipcont p em a{
+	color: #7399c6;
+	text-decoration: underline;	
+}
+.jobtipcont p em:hover,.jobtipcont p em a:hover{
+	color: #008fd0;
+}
+.jobtipcont p em:last-child{
+	text-align: right;
+}
+/* @media screen */
+@media screen and (max-width: 768px) {
+	.jobtips_box,.jobtips_left,.jobtips_right{
+		width: 100%;
+	}
+}

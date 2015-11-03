@@ -1,0 +1,365 @@
+@charset "utf-8";
+@import "reset.css";
+/* -------------------------------------------------
+ * CSS Document
+ * resumeshow.css
+ * -------------------------------------------------
+*/
+.resume_box{
+	width: 920px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.reshow_left{
+	width: 200px;
+	float: left;
+}
+.reshow_left .left_box{
+	padding-bottom: 0;
+	border-bottom: none;
+}
+.reshow_left ul h2{
+	font-size: 16px;
+	color: #7399c6;
+	font-weight: bold;
+	background: url(../images/resumeshow/fujian.png) no-repeat right 6px;
+	/*padding-bottom: 15px;*/
+	/*border-bottom: 1px solid #e7e7e7;*/
+}
+.reshow_left ul.lf_online h2{
+	background: url(../images/resumeshow/online_jl.png) no-repeat right 6px;
+}
+.reshow_left ul li a{
+	display: block;
+}
+.reshow_left ul li.add_jl{
+	background: url(../images/resumeshow/add_jl.png) no-repeat right;
+}
+.reshow_left ul li.add_jl:hover{
+	background: url(../images/resumeshow/add_jl2.png) no-repeat right;
+}
+.reshow_left ul li.del_jl{
+	line-height: 28px;
+}
+.reshow_left ul li.del_jl em{
+	color: #999;
+	font-style: normal;
+	padding-left: 20px;
+	cursor: pointer;
+	display: none;
+	margin-top: 3px;
+	background: url(../images/resumeshow/delete_jl1.png) no-repeat left;
+}
+.reshow_left ul li.del_jl em:hover{
+	background: url(../images/resumeshow/delete_jl.png) no-repeat left;
+	color: #7399c6;
+}
+.reshow_left ul.lf_online li i{
+	width: 7px;
+	height: 7px;
+	margin-left: 3px; 
+	display: inline-block;
+	background: url(../images/resumeshow/delivery_dot.png) no-repeat left;
+}
+.reshow_left ul li,.reshow_left ul div.trans_on{
+	border-bottom: 1px solid #e7e7e7;
+	padding: 10px 0;
+}
+.reshow_left ul li a{
+	color: #999;
+}
+.reshow_left ul li.del_jl:hover a{
+	color: #333;
+}
+.reshow_left ul li a:hover,.reshow_left ul li.active a{
+	color: #7399c6;
+}
+.reshow_left ul div.trans_on strong a{
+	float: right;
+}
+.reshow_left ul div.trans_on strong{
+	color: #666;
+	font-weight: normal;
+}
+.reshow_left ul div.trans_on strong i{
+	background: none;
+	color: #dc513a;
+}
+.reshow_left ul div.trans_on span{
+	border-bottom: 2px solid #cfcfcf;
+	padding: 8px 0;
+	width: 100%;
+	position: relative;
+	display: block;
+}
+.reshow_left ul div.trans_on span b{
+	width: 0px;
+	position: absolute;
+	bottom: -3px;
+	height: 5px;
+	border-radius: 5px;
+	background: #7399c6;
+	-webkit-transition:5s ease; -moz-transition:5s ease;    
+    -ms-transition:5s ease; -o-transition:5s ease;  
+    transition:5s ease; 
+    -webkit-transition-property:width, background-color;    
+    -moz-transition-property:width, background-color;   
+    -ms-transition-property:width, background-color;    
+    -o-transition-property:width, background-color; 
+    transition-property:width, background-color;
+}
+.reshow_left ul.lf_deful select{
+	border: none;
+	text-align: left;
+	color: #999;
+	cursor: pointer;
+	padding: 0; 
+	/*background: url(../images/resumeshow/chevron-small-right.png) no-repeat 97% 13px;*/
+	margin: 0;
+	box-shadow:none;
+}
+.reshow_right{
+	width: 700px;
+	float: right;
+}
+.jl_banner{
+	width: 100%;
+	height: 98px;
+	margin-top: 20px;
+	color: #fff;
+	font-size: 16px;
+	border-top: 2px solid #7399c6;
+	background: url(../images/resumeshow/jl_banner.png) no-repeat;
+}
+.jl_banner p{
+	padding: 5px 0 0 20px;
+}
+.resue_show_box{
+	width: 100%;
+	overflow: hidden;
+	line-height: 28px;
+	position: relative;
+	padding: 10px 0;
+	border-bottom: 1px solid #e7e7e7;	
+	*border-bottom-style:expression(this.nextSibling==null?"none":"solid");
+	*padding-top: expression(this.previousSibling==null?"0":"10px");
+}
+.resue_show_box:first-child{
+	padding-top: 0;
+}
+.resue_show_box:last-child{
+	border-bottom: none;
+}
+.resue_show_box h1{
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+}
+.resue_show_box h2{
+	font-size: 16px;
+	font-weight: bold;
+}
+.resue_show_box p{
+	text-align: center;
+	padding: 0 130px;
+}
+.resue_show_box p em{
+	display: block;
+	float: left;
+	margin: 0 40px;
+}
+.resue_show_box i{
+	position: absolute;
+	right: 0;
+}
+.resue_show_box strong,.resue_show_box em{
+	font-weight: normal;
+	font-style: normal;
+	margin: 0;
+	padding: 0;
+}
+.resue_show_box span em{
+	text-align: right;
+}
+/********* resume_compile *********/
+.resume_jlcont{
+	display: none;
+	background: #fafafa;
+	padding: 20px 80px;
+	padding-top: 60px;
+	position: relative;
+	border-bottom:1px solid #e7e7e7;
+}
+.resume_jlcont h3{
+	color: #333;
+	left: 30px;
+	top: 15px;
+	font-weight: bold;
+	font-size: 16px;
+	position: absolute;
+}
+.resume_jlcont dl{
+	overflow: hidden;
+	padding: 10px 0;
+}
+.resume_jlcont dl dt{
+	padding-right: 5px;
+	position: relative;
+	width: 20%;
+	text-align: right;
+}
+.resume_jlcont dl dd{
+	width:75%;
+	margin-left: 5%;
+	text-align: left;
+}
+.resume_jlcont dl dt,.resume_jlcont dl dd{
+	float: left;
+	line-height: 33px;
+}
+.resume_jlcont dl dd input[type="submit"],.resume_jlcont dl dd input[type="button"]{
+	color: #7399c6;
+	background: #fff;
+	padding: 8px 25px;
+	border:1px solid #7399c6;
+	border-radius: 5px;
+	margin-right: 30px;
+}
+.resume_jlcont dl dd input[type="submit"]:hover,.resume_jlcont dl dd input[type="button"]:hover{
+	background: #7399c6;
+	color: #fff;
+}
+.resume_jlcont p{
+	width: 100%;
+	overflow: hidden;
+}
+.resume_jlcont dl dd a.add_a,.resume_jlcont p a.add_a{
+	color: #7399c6;
+	text-decoration: underline;
+	float: right;
+	margin-left: 20px;
+}
+.resume_jlcont dl dd textarea{
+	min-height: 150px;
+}
+.resume_jlcont dl dd a.add_a:hover,.resume_jlcont p a.add_a:hover{
+	color: #008fd0;
+}
+.resume_jlcont dl.short{
+	width: 50%;
+	float: left;
+}
+.resume_jlcont dl.short dt{
+	width: 40%;
+}
+.resume_jlcont dl.short dd{
+	width: 55%;
+}
+.resume_jlcont dl dd input.short{
+	width: 46%;
+	cursor: pointer;	
+	display: inline-block;
+	float:left;
+}
+.resume_jlcont dl dd i{
+	width: 4%;
+	margin: 0 2%;
+	color: #666;
+	float: left;
+}
+.resume_jlcont .skill_compile div{
+	padding-bottom: 20px;
+}
+.resume_jlcont .certificate dl dt{
+	width: 17%;
+}
+.resume_jlcont .certificate dl dd{
+	width: 78%;
+}
+.person_compile span{
+	float: right;
+	margin-left: 20px;
+}
+.person_compile dl{
+	padding-top: 0;
+}
+.person_compile dl dd input.chusheng{
+	width:70%;
+	cursor: pointer;
+	float:left;
+}
+.person_compile dl dd select.xingbie{
+	width:25%;
+	margin-left:5%;
+	float:left;	
+}
+.person_compile dl.changdu dt{
+	width: 13%;
+}
+.person_compile dl.changdu dd{
+	width: 82%;
+}
+.person_compile span{
+	position: relative;
+}
+.person_compile span a em{
+	background: url(../images/defal_dflogo.png) no-repeat;
+	position: absolute;
+	display: none;
+	width: 116px;
+	height: 116px;
+	z-index: 99;
+	left: 0;
+	top: 0;
+}
+.person_compile span a:hover em{
+	display: block;
+}
+.resume_jlcont dl dt i{
+	color: #dc513a;
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	padding: 0;
+	/*overflow: hidden;*/
+	top: 5px;
+	right: -8px;
+	line-height: 18px;
+}
+/* @media screen */
+@media screen and (max-width: 768px) {
+	.resume_box,.reshow_left,.reshow_right{
+		width: 100%;
+	}
+	.jl_banner{
+		height: auto;
+		background: #000;
+	}
+	.resume_jlcont{
+		padding: 0;
+		padding-top: 60px;
+	}
+	.resue_show_box p{
+		padding: 0;
+	}
+	.resume_jlcont dl dt, .resume_jlcont dl dd{
+		width: 100%;
+		text-align: left;
+		margin: 0;
+		padding: 0 10px;
+	}
+	.resume_jlcont dl dt i{
+		position: relative;
+		top: 0;
+	}
+	.resume_jlcont dl dd input,.resume_jlcont dl dd select{
+		width: 100%;
+		margin: 2px 0;
+	}
+	.person_compile dl.changdu dt,.person_compile dl.changdu dd{
+		width: 100%;
+	}
+	.person_compile span{
+		float: none;
+	}
+}

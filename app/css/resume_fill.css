@@ -1,0 +1,328 @@
+@charset "utf-8";
+@import "reset.css";
+/* -------------------------------------------------
+ * CSS Document
+ * index.css
+ * -------------------------------------------------
+*/
+/* fillin */
+.fillin_box{
+	width: 920px;
+	padding-bottom: 100px;
+	margin:0 auto;
+	overflow: hidden;
+}
+.fillin_box_bg img{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -9;
+}
+.fillin_page{
+	width: 764px;
+	margin: 0 auto;
+	border:20px solid #fafafa;
+	background: #fff;
+	margin-top: 120px;
+	padding-top: 100px;
+	padding-bottom: 30px;
+	position: relative;
+	box-shadow: 0px 2px 5px #ccc;
+}
+.fillin_page2,.fillin_page3{
+	display: none;
+}
+.fillin_page h1{
+	width: 820px;
+	height: 85px;
+	color: #fff;
+	font-size: 24px;
+	margin: 0 auto;
+	position: absolute;
+	top: 20px;
+	line-height: 68px;
+	text-indent: 70px;
+	left: -40px;
+	background: url(../images/fillin_pagebg.png) no-repeat left;
+}
+.fillin_page h1 em{
+	font-size: 18px;
+	color: #7399c6;
+	font-style: normal;
+	font-weight: bold;
+	float: right;
+	margin:20px 210px 0 0;
+}
+.fillin_page dl,.fillin_page ul{
+	width: 412px;
+	overflow: hidden;
+	margin: 0 auto;
+	font-size: 18px;
+	line-height: 28px;
+	color: #666;
+}
+.fillin_page dl dt,.fillin_page dl dd,.fillin_page ul li{
+	margin-top: 15px;
+}
+.fillin_page dl dt{
+	float: right;
+	padding: 5px;
+	background: #eef0ff;
+	cursor: pointer;
+	position: relative;
+}
+.fillin_page dl dd{
+	float: left;
+	width: 245px;
+}
+.fillin_page dl dd a{
+	display: block;
+	width: 110px;
+	height: 33px;
+	color: #a9a9a9;
+	border:1px solid #cfcfcf;
+	text-align: center;
+	line-height: 28px;
+	float: right;
+	*float:expression(this.previousSibling==null?"left":"right");;
+}
+.fillin_page dl dd a:first-child{
+	float: left;
+}
+.fillin_page dl dd a:hover,.fillin_page dl dd a.active{
+	background: #7399c6;
+	color: #fff;
+}
+.fillin_page ul{
+	margin-top: 10px;
+}
+.fillin_page dl dd input,.fillin_page ul li input,.fillin_page ul li select{
+	width: 100%;
+	height: 33px;
+	padding: 0 10px;
+	color: #999;
+	border:1px solid #cfcfcf;
+}
+.fillin_page ul li em input{
+	width: 45%;
+	float: right;
+	*float:expression(this.previousSibling==null?"left":"right");;
+}
+.fillin_page ul li em:first-child input{
+	float: left;
+}
+.fillin_page dl dd i,.fillin_page ul li i{
+	color: #dc513a;
+}
+.fillin_page ul li a{
+	float: right;
+	padding: 3px 15px;
+	color: #fff;
+	margin-left: 20px;
+	text-align: center;
+	background: #7399c6;
+	border-radius: 5px;
+}
+.fillin_page ul li a:hover{
+	background: #658cba;
+}
+.fillin_page ul span a{
+	color: #7399c6;
+	float: right;
+	font-size: 16px;
+}
+.fillin_page ul span a:hover{
+	color: #008fd0;
+}
+.fillin_page ul li input.timepicker{
+	font-style: normal;
+	font-size: 16px;
+	cursor: pointer;
+}
+.clone_school hr,.clone_work hr{
+	width: 412px;
+	height: 1px;
+	margin-top: 40px;
+	display: block;
+	background: #cfcfcf;
+}
+/* -------------------------------------------------
+ * forgetpw
+ * -------------------------------------------------
+*/
+.forgetpw{
+	padding-bottom: 30px;
+}
+.forgetpw .fillin_page{
+	border-color: #edf9ff;
+	margin-top: 50px;
+}
+.forgetpw .fillin_page h1{
+	top: 30px;
+}
+.forgetpw ul li span{
+	text-align: center;
+	display: block;
+}
+.forgetpw ul li b{
+	padding-bottom: 20px;
+	margin-top: 10px;
+	font-weight: normal;
+	width: 80px;
+	margin-right: 85px;
+	text-align: center;
+	float: left;
+	color: #999;
+	*margin-right:expression(this.nextSibling==null?"0":"85px");
+}
+.forgetpw ul li b.onhover{
+	color: #333;
+}
+.forgetpw ul li b:last-child{
+	margin-right: 0;
+}
+.forgetpw ul li input[type=button]{
+	float: right;
+	padding: 3px 15px;
+	color: #fff;
+	margin-left: 20px;
+	text-align: center;
+	background: #7399c6;
+	border-radius: 5px;
+	width: 100px;
+}
+.forgetpw ul li input[type=button]:hover{
+	background: #658cba;
+}
+.forgetpw ul li p{	
+	line-height: 38px;
+	font-size: 16px;
+	text-align: center;
+}
+.forgetpw ul li p em{
+	color: #7399c6;
+	font-style: normal;
+}
+.forgetpw ul li p a{
+	display: inline;
+	background: none;
+	float: none;
+	margin: 0;
+	padding: 0;
+	color: #666;
+}
+.forgetpw ul li p a:hover{
+	background: none;
+	color: #999;
+}
+.onsendemail{
+	display: none;
+}
+/* -------------------------------------------------
+ * company
+ * -------------------------------------------------
+*/
+.company{
+	padding-bottom: 30px;
+}
+.company .fillin_page{
+	margin-top: 60px;
+}
+.company .fillin_page ul li a{
+	padding: 0px 20px;
+	font-size:14px;
+	margin-left: 40px;
+}
+.company_box ul li a.upcompimg{
+	padding: 0;
+	margin: 0;
+	float: none;
+	overflow: hidden;
+	background: none;
+}
+.company_box ul li a.upcompimg img{
+	display: block;
+	margin: 0 auto;
+	width: 170px;
+	height: 170px;
+	border:4px solid #eef0ff;
+}
+.company_box ul li textarea{
+	min-height: 150px;
+}
+.company_hide{
+	text-align: center;
+	display: none;
+}
+.company_hide p,.company_hide span{
+	padding: 20px 0;
+}
+.company_hide ul span a{
+	float: left;
+	text-decoration: underline;
+	margin-left: 70px;
+	line-height: 38px;
+}
+.clone_school ul li.short_sel input{
+	width: 46%;
+	cursor: pointer;
+	display: inline-block;
+	float:left;
+}
+.clone_school ul li.short_sel i{
+	width: 4%;
+	margin: 0 2%;
+	color: #666;
+	float: left;
+}
+.fillin_page1 dl dt em{
+	background: url(../images/defal_dflogo.png) no-repeat;
+	position: absolute;
+	display: none;
+	width: 116px;
+	height: 116px;
+	z-index: 99;
+	left: 5px;
+	top: 5px;
+}
+.fillin_page1 dl dt:hover em{
+	display: block;
+}
+.fillin_page ul li.select_persons a{
+	margin: 0;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	padding: 0 10px;
+	background: none;
+	color: #333;
+	border:1px solid #cfcfcf;
+}
+.fillin_page ul li.select_persons a.active{
+	background: #7399c6;
+	text-decoration: none;
+	color: #fff;
+}
+/* @media screen */
+@media screen and (max-width: 768px) {
+	.fillin_page,.fillin_page h1{
+		width: 100%
+	}	
+	.fillin_page dl,.fillin_page ul{
+		width: 80%;
+	}
+	.forgetpw ul li b{
+		display: none;
+	}
+	.forgetpw ul li b.onhover:last-child{
+		display: block;
+		margin: 0 auto;
+		margin-top: 20px;
+		float: none;
+	}
+	.fillin_box{
+		width: 100%;
+	}
+}

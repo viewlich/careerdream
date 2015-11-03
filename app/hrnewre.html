@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>CareerDreamB端职业管理</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="css/bootstrap.min.css" tydive="text/css" />
+<link rel="stylesheet" href="css/index.css" tydive="text/css" />
+<link rel="stylesheet" href="css/cityselect.css" tydive="text/css" />	
+<link rel="stylesheet" href="css/hrmanage.css" tydive="text/css" />	
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/base.js"></script>
+<script src="js/cityselect.js"></script>
+<script src="js/manage.js"></script>
+</head>
+<body>
+<!-- menubox -->
+<div class="indexbox">
+	<div id="navCodeIndex" class="hidden">1</div>
+	<!-- index_left -->
+	<div class="index_left">
+		<div class="indlf_box menubox">
+			<div>
+				<ul>
+                    <li class="management"><h1>职位管理</h1></li>
+                    <li class="release managementli"><a href="javascript:" class="active">发布新职位</a></li>
+                    <li class="irelease managementli"><a href="javascript:">我发布的职位</a></li>
+                    <li class="offline managementli"><a href="javascript:">已下线的职位</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- index_right -->
+	<div class="hrnewre">
+        <h1>发布新职位</h1>
+        <dl>
+        	<dt>行业类别<i>*</i></dt>
+            <dd><select name="hrcom_class">
+                    <option value="商业银行">商业银行</option>
+                    <option value="投资管理">投资管理</option>
+                    <option value="私募股权/风投">私募股权/风投</option>
+                    <option value="外资银行">外资银行</option>
+                    <option value="内资投行/券商">内资投行/券商</option>
+                    <option value="金融经纪">金融经纪</option>
+                    <option value="保险">保险</option>
+                    <option value="审计税务">审计税务</option>
+                    <option value="官方机构">官方机构</option>
+                    <option value="其他金融服务">其他金融服务</option>
+                    <option value="惠及财务">惠及财务</option>
+                    <option value="风控/合规">风控/合规</option>
+                    <option value="内部运营">内部运营</option>
+                    <option value="公关">公关</option>
+                    <option value=" IT技术"> IT技术</option>
+                    <option value=" 其他"> 其他</option>
+            </select></dd>
+        </dl>
+        <dl>
+        	<dt>所属部门<i>*</i></dt><dd><input type="text" name="hrcom_depar" placeholder="请输入此职位所属部门" /></dd>
+        </dl>
+        <dl>
+        	<dt>职位名称<i>*</i></dt><dd><input type="text" name="hrcom_name" placeholder="请输入此职位职位名称" /></dd>
+        </dl>
+        <dl>
+        	<dt>工作性质<i>*</i></dt><dd class="hrcom_nature"><a href="javascript:">全职</a><a href="javascript:">实习</a><i class="hidden">请选择工作性质</i></dd>
+        </dl>
+        <dl>
+        	<dt>最低学历<i>*</i></dt>
+        	<dd>
+        		<select name="hrcom_educ">
+        			<option>大专</option>
+        			<option selected="selected">本科</option>
+        			<option>硕士</option>
+        			<option>博士</option>
+        		</select>
+        	</dd>
+        </dl>
+        <dl>
+        	<dt>工作经验<i>*</i></dt>
+        	<dd>
+        		<select name="hrcom_exper">
+        			<option selected="selected">应届毕业生</option>
+        			<option>1-3年</option>
+        			<option>3-5年</option>
+        			<option>5年以上</option>
+        		</select>
+        	</dd>
+        </dl>
+        <dl>
+        	<dt>薪资范围</dt>
+        	<dd class="hrcom_smonbox"><input type="text" name="hrcom_smon" placeholder="最低工资" />K至<input type="text" name="hrcom_smon" placeholder="最高工资" />K<p>请输入整数，不填写为面议。1K=1000</p></dd>
+        </dl>
+        <dl>
+        	<dt>工作城市<i>*</i></dt><dd><input type="text" name="hrcom_city" placeholder="请填写工作城市" id="citySelect" /></dd>
+        </dl>
+        <dl>
+        	<dt>公司地址</dt><dd><input type="text" name="hrcom_address" /></dd>
+        </dl>
+        <dl>
+        	<dt>职位描述<i>*</i></dt><dd><textarea name="hrcom_desc"></textarea></dd>
+        </dl>
+        <dl>
+        	<dt>工作职责<i>*</i></dt><dd><textarea name="hrcom_duty"></textarea></dd>
+        </dl>
+        <dl>
+        	<dd class="hrcom_submit"><input type="submit" value="确定发布" name="hrcom_submit" /></dd>
+        </dl>
+	</div>
+</div>
+<!-- menubox end -->
+</body>
+</html>

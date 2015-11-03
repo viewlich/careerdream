@@ -1,0 +1,302 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>CareerDream职业梦我的简历</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="css/bootstrap.min.css" tydive="text/css" />
+<link rel="stylesheet" href="css/resumeshow.css" tydive="text/css" />
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!--<script src="js/timepicker/WdatePicker.js"></script>-->
+<script type="text/javascript" src="js/laydate/laydate.js"></script>
+<script src="js/base.js"></script>
+<script src="js/resumeshow.js"></script>
+<script src="js/details_pop.js"></script>
+</head>
+<body>
+<!-- resume_box -->
+<div class="resume_box">
+	<div id="navCodeIndex" class="hidden">3</div>
+	<!-- jobtips -->
+	<div class="reshow_left">
+		<ul class="left_box lf_deful">
+			<h2>默认投递</h2>
+			<!-- <li><a href="javascript:">选择简历</a></li> -->
+			<li>
+				<select name="reshow_def_jl">
+					<option>选择简历</option>
+					<option>简历1.pdf</option>
+					<option>简历2.pdf</option>
+				</select>
+			</li>
+		</ul>
+		<ul class="left_box lf_fujian">
+			<h2>附件简历</h2>
+			<li class="del_jl"><a href="javascript:">陈恩泽的简历</a><em>删除简历</em></li>
+			<li class="del_jl"><a href="javascript:">吴小龙的简历</a><em>删除简历</em></li>
+			<li class="del_jl"><a href="javascript:">吴晓龙的简历</a><em>删除简历</em></li>
+			<li class="add_jl"><a href="javascript:">添加简历</a></li>
+		</ul>
+		<ul class="left_box lf_online">
+			<h2>在线简历</h2>
+			<div class="trans_on"><strong>完整度：<i>50%</i><a href="javascript:"><img src="images/resumeshow/lookthis.png" /></a></strong><span><b></b></span></div>
+			<li class="re_geren"><a href="javascript:">个人信息<i></i></a></li>
+			<li class="re_jiaoyu"><a href="javascript:">教育经历<i></i></a></li>
+			<li class="re_gongzuo"><a href="javascript:">工作经历<i></i></a></li>
+			<li class="re_shegong"><a href="javascript:">社工经历<i></i></a></li>
+			<li class="re_qita"><a href="javascript:">其他技能评价<i></i></a></li>
+			<li class="re_xingqu"><a href="javascript:">兴趣爱好<i></i></a></li>
+		</ul>		
+	</div>
+	<div class="reshow_right">
+		<div class="jl_banner">
+			<p>添加您的附件简历，可以发送针对的简历给企业。</p>
+			<p>完善您的在线简历，职业梦可以在线生成一份专业的金融求职简历。</p>
+			<p>选择您的默认投递简历，可以在每次投递职位时使用默认简历。</p>
+		</div>
+		<div class="js_compy right_box">
+			<div class="resume_jlcont">
+				<div class="person_compile">
+					<h3>个人信息</h3>
+					<span><a href="javascript:"><img src="images/defal_dflogo.png" alt="头像" /><em></em></a></span>
+					<dl>
+						<dt>姓名<i>*</i></dt>
+						<dd><input type="text" name="res_person_name" /></dd>
+					</dl>
+					<dl>
+						<dt>出生年份</dt>
+						<dd>
+						<input type="text" readonly name="res_person_age" class="chusheng" onClick="WdatePicker()" />
+						<select name="res_person_phone" class="xingbie">
+							<option>男</option>
+							<option>女</option>
+						</select>     
+						</dd>
+					</dl>
+					<dl>
+						<dt>电话<i>*</i></dt>
+						<dd><input type="text" name="res_person_phone" placeholder="请输入电话号码" /></dd>
+					</dl>
+					<dl class="changdu">
+						<dt>地址</dt>
+						<dd><input type="text" name="res_person_address" /></dd>
+					</dl>
+					<dl class="changdu">
+						<dt>&nbsp;</dt>
+						<dd><input type="submit" value="保存" name="res_person_submit" /><input type="button" value="取消" name="res_person_cancer" /></dd>
+					</dl>
+				</div>	
+			</div>
+			<div class="resue_show_box">
+				<i><a href="javascript:" class="decom_person"><img src="images/resumeshow/compose.png" alt="编辑" /></a></i>
+				<h1>求职者姓名</h1>
+				<p><em>性别：男</em><em>联系方式：13811111111</em><em>邮箱：注册邮箱</em></p>
+			</div>
+			<div class="resume_jlcont">
+				<div class="ducation_compile">					
+					<h3>教育经历</h3>
+					<div class="add_hit">
+					<dl>
+						<dt>学校名称<i>*</i></dt>
+						<dd><input type="text" name="res_ducation_name" /></dd>
+					</dl>
+					<dl>			
+						<dt>所学专业<i>*</i></dt>
+						<dd><input type="text" name="res_ducation_prof" /></dd>
+					</dl>
+					<dl>
+						<dt>所获学位<i>*</i></dt>
+						<dd><select name="res_ducation_degr">
+							<option>大专</option>
+							<option selected="selected">本科</option>
+							<option>硕士</option>
+							<option>博士</option>
+							<option>在读</option>
+						</select></dd>
+					</dl>
+					<dl>
+						<dt>在读年级<i>*</i></dt>
+						<dd><select name="res_ducation_grade">
+							<option selected="selected">大一</option>
+							<option>大二</option>
+							<option>大三</option>
+							<option>大四</option>
+							<option>研一</option>
+							<option>研二</option>
+							<option>博一</option>
+						</select></dd>
+					</dl>
+					<dl>
+						<dt>起始时间<i>*</i></dt>
+						<dd><input type="text" readonly name="res_ducation_stime" class="short" onClick="laydate({format: 'YYYY-MM-DD'})" />
+							<i>至</i><input type="text" readonly name="res_ducation_etime" onClick="laydate({format: 'YYYY-MM-DD'})" class="short" /></dd>
+					</dl>
+					<dl>
+						<dt>GPA</dt>
+						<dd><input type="text" name="res_ducation_sgpa" class="short" style="cursor: text;" /><i>/</i><input type="text" name="res_ducation_egpa" class="short" style="cursor: text;" /></dd>
+					</dl>
+					<dl>
+						<dt>所修课程/奖励</dt>
+						<dd><input type="text" name="res_ducation_cours" /></dd>
+					</dl>
+					</div>
+					<dl>
+						<dt>&nbsp;</dt>
+						<dd><input type="submit" name="res_ducation_submit" value="保存" /><input type="button" name="res_ducation_button" value="取消" /><a href="javascript:" class="add_a add_ducation">继续添加</a></dd>
+					</dl>
+				</div>
+			</div>
+			<div class="resue_show_box">
+				<i><a href="javascript:" class="decom_ducation"><img src="images/resumeshow/compose.png" alt="编辑" /></a></i>
+				<h2>教育经历</h2>
+				<span><strong class="col-sm-6">XX大学XX</strong><em class="col-sm-6">2001.01.11-2011.01.11</em></span>
+				<span><strong class="col-sm-6">专业</strong><em class="col-sm-6">学历</em></span>
+			</div>
+			<div class="resume_jlcont">
+				<div class="work_compile">
+					<h3>工作经历</h3>
+					<div class="add_hit">
+					<dl>
+						<dt>公司名称<i>*</i></dt>
+						<dd><input type="text" name="res_work_name" /></dd>
+					</dl>
+					<dl>
+						<dt>担任职务<i>*</i></dt>
+						<dd><input type="text" name="res_work_post" /></dd>
+					</dl>
+					<dl>
+						<dt>所在部门</dt>
+						<dd><input type="text" name="res_work_depar" /></dd>
+					</dl>
+					<dl>
+						<dt>起始时间<i>*</i></dt>
+						<dd><input type="text" onClick="laydate({format: 'YYYY-MM-DD'})" name="res_work_stime" readonly class="short" /><i>至</i><input type="text" onClick="laydate({format: 'YYYY-MM-DD'})" name="res_work_etime" readonly class="short" /></dd>
+					</dl>
+					<dl>
+						<dt>工作职能<i>*</i></dt>
+						<dd><textarea name="res_work_func"></textarea></dd>
+					</dl>
+					</div>
+					<dl>
+						<dt>&nbsp;</dt>
+						<dd><input type="submit" name="res_work_submit" value="保存" /><input type="button" name="res_work_button" value="取消" /><a href="javascript:" class="add_a add_work">继续添加</a></dd>
+					</dl>
+				</div>
+			</div>
+			<div class="resue_show_box">
+				<i><a href="javascript:" class="decom_work"><img src="images/resumeshow/compose.png" alt="编辑" /></a></i>	
+				<h2>工作经历</h2>
+				<span><strong class="col-sm-6">公司名称</strong><em class="col-sm-6">2001.01-2011.01</em></span>
+				<span><strong class="col-sm-6">专业</strong><em class="col-sm-6"></em></span>
+			</div>
+			<div class="resume_jlcont">
+				<div class="social_compile">
+					<h3>社工经历</h3>
+					<dl>
+						<dt>组织社团<i>*</i></dt>
+						<dd><input type="text" name="res_social_asso" /></dd>
+					</dl>
+					<dl>
+						<dt>担任职务<i>*</i></dt>
+						<dd><input type="text" name="res_social_post" /></dd>
+					</dl>
+					<dl>
+						<dt>所在地区</dt>
+						<dd><input type="text" name="res_social_area" /></dd>
+					</dl>
+					<dl>
+						<dt>起始时间<i>*</i></dt>
+						<dd><input type="text" onClick="WdatePicker()" readonly name="res_social_stime" class="short" /><i>至</i><input type="text" onClick="WdatePicker()" readonly name="res_social_etime" class="short" /></dd>
+					</dl>
+					<dl>
+						<dt>工作职能<i>*</i></dt>
+						<dd><textarea name="res_social_work"></textarea></dd>
+					</dl>
+					<dl>
+						<dt>&nbsp;</dt>
+						<dd><input type="submit" name="res_social_submit" value="保存" /><input type="button" name="res_social_button" value="取消" /><a href="javascript:" class="add_a add_social">继续添加</a></dd>
+					</dl>
+				</div>
+			</div>
+			<div class="resume_jlcont">
+				<div class="skill_compile">
+					<h3>其他技能</h3>
+					<div class="skill_add">
+					<dl class="short">
+						<dt>语言<i>*</i></dt>
+						<dd><input type="text" name="res_skill_lang" /></dd>
+					</dl>
+					<dl class="short">
+						<dt>熟练程度<i>*</i></dt>
+						<dd><select name="res_skill_skilled">
+							<option>母语</option>
+							<option>流利</option>
+							<option>一般</option>							
+						</select></dd>
+					</dl>
+					<dl class="short">
+						<dt>科目</dt>
+						<dd><input type="text" name="res_social_subject" /></dd>
+					</dl>
+					<dl class="short">
+						<dt>成绩</dt>
+						<dd><input type="text" name="res_social_results" /></dd>
+					</dl>
+					<p><a href="javascript:" class="add_a del_res_lang">删除此条</a><a href="javascript:" class="add_a add_res_lang">继续添加</a></p>
+					</div>
+					<div class="certificate">
+					<dl>
+						<dt>证书</dt>
+						<dd><select name="res_skill_certi">
+							<option>CFA一级</option><option>CFA二级</option><option>CFA三级</option>
+							<option>CPA三科以下</option><option>CPA三科</option><option>CPA四科</option><option>CPA五科</option><option>CPA六科</option><option>CPA全科</option><option>FRM一级</option><option>FRM二级</option>
+						</select></dd>
+					</dl>
+					<p><a href="javascript:" class="add_a add_certi">继续添加</a><a href="javascript:" class="add_a del_certi">删除此条</a></p>
+					</div>
+					<div class="software">
+					<dl class="short">
+						<dt>软件技能</dt>
+						<dd><input type="text" name="res_skill_soft" /></dd>
+					</dl>
+					<dl class="short">
+						<dt>熟练程度</dt>
+						<dd><select name="res_skill_degree">
+							<option>了解</option>
+							<option>熟练</option>
+							<option>精通</option>
+						</select></dd>
+					</dl>
+					<p><a href="javascript:" class="add_a add_soft">继续添加</a><a href="javascript:" class="add_a del_soft">删除此条</a></p>
+					</div>			
+					<dl>
+						<dt>&nbsp;</dt>
+						<dd><input type="submit" name="res_skill_submit" value="保存" /><input type="button" name="res_skill_button" value="取消" /></dd>
+					</dl>
+				</div>
+			</div>
+			<div class="resume_jlcont">
+				<div class="hobby_compile">
+					<h3>兴趣爱好</h3>
+					<dl>
+						<dd><input type="text" name="res_hobby_name" /></dd>						
+					</dl>
+					<dl>
+						<dt>&nbsp;</dt>
+						<dd><input type="submit" name="res_hobby_submit" value="保存" /><input type="button" name="res_hobby_button" value="取消" /></dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- resume_box end -->
+<script>
+//datapicker
+!function(){
+	laydate.skin('molv');//切换皮肤，请查看skins下面皮肤库
+}();
+</script>
+</body>
+</html>

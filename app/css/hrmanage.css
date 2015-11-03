@@ -1,0 +1,420 @@
+@charset "utf-8";
+/* -------------------------------------------------
+ * CSS Document
+ * hrmanage.css
+ * -------------------------------------------------
+*/
+.menubox{
+    margin-top: 0;
+}
+.manage_list{
+    margin-top: 0;
+    width: 700px;
+    float: right;
+    padding-top: 0;
+    overflow: hidden;
+}
+.manage_list h1{
+    color: #666;
+    padding: 10px 0;
+}
+.manage_list h1 i{
+    color: #7399c6;
+}
+.manlist_tit{
+    overflow: hidden;
+    width: 100%;
+    background: #fafafa;
+    overflow: hidden;
+    height: 50px;
+    font-size: 16px;
+    line-height: 46px;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+}
+.manlist_tit span a,.manlist_tit p a{
+    margin-left: 15px;
+    color: #666;
+}
+.manlist_tit p{
+    text-align: right;
+}
+.manlist_tit p i{
+    display: none;
+}
+.manlist_tit p em{
+    font-style: normal;
+    padding: 2px 5px;
+    color: #666;
+    margin: 0 10px;
+    border:1px solid #e7e7e7;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.manlist_tit p a.ma_all_sel{
+    padding-left: 25px;
+    background: url(../images/select_jianli.png) no-repeat left;
+}
+.manlist_tit p a.active{
+    background: url(../images/select_jianli_h.png) no-repeat left;
+}
+.manlist_tit span a:hover,.manlist_tit p a:hover,.manlist_tit p em:hover,.manlist_cont dl a:hover{
+    color: #7399c6;
+}
+.manlist_tit span,.manlist_tit p,.manlist_cont dl dt,.manlist_cont dl dd{
+    padding: 0;
+}
+.manlist_cont dl{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    border-bottom: 1px solid #e7e7e7;
+}
+.manlist_cont dl dt{
+    overflow: hidden;
+    width: 22%;
+}
+.manlist_cont dl dd{
+    overflow: hidden;
+    width: 78%;
+}
+.manlist_cont dl dt h2{
+    width: 124px;
+    text-align: center;
+    padding: 8px 0;
+}
+.manlist_cont dl dt img{
+    max-width: 122px;
+    border:3px solid #7399c6;
+}
+.manlist_cont dl dt h2 a,.manue_jl li.titi span{
+    font-size: 18px;
+    color: #000;
+    padding: 10px 0;
+}
+.manue_jl li{
+    width: 100%;
+    overflow: hidden;
+}
+.manue_jl li span{
+    width: 75%;
+    text-align: left;
+    float: left;
+    line-height: 25px;
+}
+.manlist_cont dl dd span p{
+    max-width: 300px;
+    white-space:nowrap; 
+    float: left;
+    overflow:hidden; 
+    text-overflow:ellipsis;
+    display: inline-block;
+}
+.manue_jl li strong{
+    width: 25%;
+    text-align: right;
+    font-weight: normal;
+    float: right;
+}
+.manue_jl li strong i{
+    background: url(../images/select_jianli.png) no-repeat;
+    display: block;
+    width: 16px;
+    height: 16px;
+    float: right;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.manue_jl li strong i.active{
+    background: url(../images/select_jianli_h.png) no-repeat;
+}
+.manue_jl li span.pinglun{
+    width: 80%;
+    font-family: '宋体';
+    line-height: 28px;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+}
+.manue_jl li span.jl_score{ 
+    font-style: normal;
+}
+.manue_jl li span.jl_score a{
+    color: #7399c6;
+}
+.manue_jl li span.jl_score a:hover{
+    color: #008df0;
+}
+.manue_jl li span.jl_score i,.manue_jl li span.jl_score b{ 
+    margin: 0; 
+    font-style: normal; 
+    font-weight: normal; 
+    margin-right: 10px;
+}
+.manue_jl li span.jl_score b{ 
+    color: #d7232c; 
+    font-style: italic; 
+    font-size: 16px; 
+    font-weight: bold;
+}
+.manue_jl li span.jl_score em{ 
+    width: 170px; 
+    height: 14px; 
+    margin-top: 6px; 
+    background: #d0d0d4; 
+    overflow: hidden; 
+    display: block; 
+    float: left; 
+    margin-right: 10px;
+}
+.manue_jl li span.jl_score i{ 
+    background: #7399c6; 
+    width: 0px; 
+    height: 14px; 
+    position: relative; 
+    display: block; 
+    overflow: hidden;
+    -webkit-transition:5s ease; -moz-transition:5s ease;    
+    -ms-transition:5s ease; -o-transition:5s ease;  
+    transition:5s ease; 
+    -webkit-transition-property:width, background-color;    
+    -moz-transition-property:width, background-color;   
+    -ms-transition-property:width, background-color;    
+    -o-transition-property:width, background-color; 
+    transition-property:width, background-color;
+}
+.manlist_cont dl p.contacth{
+    display: none;
+    text-align: center;
+    width: 100%;
+    color: #666;
+    float: left;
+    overflow: hidden;
+    padding-top: 10px;
+    margin-top: 10px;
+    border-top:1px solid #e7e7e7;
+}
+.manlist_cont dl p i{
+    margin-right: 40px;
+}
+.manlist_cont dl p i,.manlist_cont dl p b{
+    font-weight: normal;
+    font-style: normal;
+}
+/* -------------------------------------------------
+ * hrrele
+ * -------------------------------------------------
+*/
+.editor{
+    float: right;
+    width: 50px;
+    /*margin-left: 20px;*/
+}
+.editor i{
+    display: none;
+}
+.management{
+    color: #7399c6;
+    font-size: 16px;
+    margin-left: 14px;
+    margin-top: 12px;
+    /*margin-bottom: 8px;*/
+}
+.management h1{
+    padding-bottom: 10px;
+    color: #999;
+    font-weight: bold;
+}
+.managementli{
+    width: 170px;
+    /*margin-top: 14px;*/
+    /*margin-bottom: 14px;*/
+    margin-left: 14px;
+
+    border-top: 1px solid #e7e7e7;
+}
+.managementli a{
+    /*background-color: #ff0000;*/
+    /*margin-top: 10px;*/
+    font-size: 14px;
+    height:30px;
+    line-height:45px;
+    color: #999999;
+}
+.managementli a:hover,.managementli a.active{
+    color: #7399c6;
+}
+.number{
+    color: #7399c6;
+}
+/* hrnewre */
+.hrnewre{
+    width: 670px;
+    float: right;
+    border:20px solid #fafafa;
+    background: #fff;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    position: relative;
+    box-shadow: 0px 2px 5px #ccc;
+}
+.hrnewre h1{
+    width: 700px;
+    height: 85px;
+    color: #fff;
+    font-size: 24px;
+    margin: 0 auto;
+    position: absolute;
+    top: 10px;
+    line-height: 68px;
+    text-indent: 70px;
+    left: -40px;
+    background: url(../images/fillin_pagebg.png) no-repeat left;
+}
+.hrnewre dl{
+    padding: 10px 60px;
+    overflow: hidden;
+}
+.hrnewre dl dt,.hrnewre dl dd{
+    text-align: left;
+    float: left;
+    font-size: 16px;
+    font-weight: normal;
+}
+.hrnewre dl dt{
+    position: relative;
+    padding-right: 30px;
+    line-height: 32px;
+}
+.hrnewre dl dt i{
+    color: #dc513a;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    /*overflow: hidden;*/
+    top: 5px;
+    right: 15px;
+    line-height: 18px;
+}
+.hrnewre dl dd input,.hrnewre dl dd select,.hrnewre dl dd textarea{
+    width: 400px;
+}
+.hrnewre dl dd select{
+    width: 250px;
+}
+.hrnewre dl dd select[name=hrcom_class]{
+    width: 400px;
+}
+.hrnewre dl dd textarea{
+    min-height: 150px;
+}
+.hrnewre dl dd.hrcom_smonbox input{
+    width: 40%;
+    display: inline-block;
+    margin: 0 7px;
+}
+.hrnewre dl dd.hrcom_nature i{
+    line-height: 28px;
+    color: #dc513a;
+}
+.hrnewre dl dd.hrcom_smonbox input:first-child{
+    margin-left: 0;
+}
+.hrnewre dl dd.hrcom_smonbox p{
+    font-size: 14px;
+    color: #999;
+    margin-top: 5px;
+}
+.hrnewre dl dd.hrcom_nature a{
+    display: block;
+    float: left;
+    margin-right: 20px;
+    padding: 4px 40px;
+    border-radius: 5px;
+    border:1px solid #ccc;
+}
+.hrnewre dl dd.hrcom_nature a.active{
+    background: #7399c6;
+    color: #fff;
+}
+.hrnewre dl dd.hrcom_submit{
+    float: right;
+    padding-right: 20px;
+}
+.hrnewre dl dd input[type=submit]{
+    background: #7399c6;
+    border:none;
+    color: #fff;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;  
+}
+.hrnewre dl dd input[type=submit]:hover{
+    background: #008fd0;
+}
+@media screen and (max-width: 768px){
+    .conlist ul li{
+        text-align: left;
+    }
+    .editor{
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+        width: auto;
+    }
+    .conlist ul li strong a{
+        padding:0;
+        margin: 0;
+    }
+    .hrnewre h1{
+        font-size: 16px;
+        background-position: -10%;
+    }
+    .managementli{
+        width: 100%;
+        margin: 0;
+        text-indent: 5%;
+    }
+    .hrnewre{
+        width: 100%;
+    }
+    .hrnewre dl{
+        padding: 10px 2%;
+    }
+    .hrnewre dl dt, .hrnewre dl dd{
+        width: 100%;
+    }
+    .hrnewre dl dt i{
+        position: relative;
+        right: -8px;
+        top: 0;
+    }
+    .hrnewre dl dd input, .hrnewre dl dd select, .hrnewre dl dd textarea,.hrnewre dl dd select[name=hrcom_class]{
+        width: 100%;
+    }
+    .manage_list,.manlist_cont dl dt,.manlist_cont dl dd{
+        width: 100%;
+    }
+    .manue_jl li strong i{
+        float: left;
+    }
+    .manlist_cont dl dt h2{
+        text-align: left;
+    }
+    .manlist_tit{
+        height: auto;
+    }
+    .manlist_tit p{
+        text-align: left;
+    }
+    .manlist_tit p em{
+        float: right;
+        line-height: 30px;
+    }
+    .manue_jl li strong,.manue_jl li span{
+        width: 100%;
+        text-align: left;
+        line-height: 28px;
+    }
+}

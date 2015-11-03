@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>CareerDreamB端职业管理</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="css/bootstrap.min.css" tydive="text/css" />
+<link rel="stylesheet" href="css/index.css" tydive="text/css" />	
+<link rel="stylesheet" href="css/hrmanage.css" tydive="text/css" />	
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/base.js"></script>
+<script src="js/manage.js"></script>
+<script>
+function placeholder(nodes,pcolor) {
+      if(nodes.length && !("placeholder" in document_createElement_x("input"))){
+          for(i=0;i
+              var self = nodes[i],
+                  placeholder = self.getAttribute('placeholder') || '';     
+              self.onfocus = function(){
+                  if(self.value == placeholder){
+                     self.value = 'sdfssss';
+                     self.style.color = "";
+                  }               
+              }
+              self.onblur = function(){
+                  if(self.value == ''){
+                      self.value = placeholder;
+                      self.style.color = pcolor;
+                  }              
+              }                                       
+              self.value = placeholder;  
+              self.style.color = pcolor;              
+          }
+      }
+    }    
+
+</script>
+</head>
+<body>
+<!-- indexbox -->
+<div class="indexbox">
+	<div id="navCodeIndex" class="hidden">2</div>
+	<!-- index_left -->
+	<div class="index_left">
+		<div class="indlf_box menubox">
+			<div>
+				<ul>
+                    <li class="management"><h1>简历管理</h1></li>
+                    <li class="mange_all managementli"><a href="javascript:" class="active"> 收到的简历</a></li>
+                    <li class="mange_no managementli"><a href="javascript:">未处理的简历</a></li>
+                    <li class="manage_dis managementli"><a href="javascript:">不匹配的简历</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- 简历列表 -->
+	<div class="right_box manage_list">
+		<h1>共收到<i>100</i>封简历</h1>
+		<div class="manlist_tit">
+			<span class="col-sm-4"><a href="javascript:">最新</a><a href="javascript:">评分最高</a><a href="javascript:">推荐精英</a></span>
+			<p class="col-sm-8">
+				<i>
+				<a href="javascript:" class="ma_all_sel">全选</a>
+				<a href="javascript:" class="ma_all_for">转发</a>
+				<a href="javascript:" class="ma_all_down">下载简历</a>
+				<a href="javascript:" class="ma_all_dis">不合适</a>
+				</i>
+				<em>批量管理</em>				
+			</p>			
+		</div>
+		<div class="manlist_cont">
+			<dl>
+				<dt class="col-sm-3">
+					<h2><a href="javascript:">吴晓</a></h2>
+					<a href="javascript:"><img src="images/user_head.png" alt="职业梦" /></a>
+				</dt>
+				<dd class="col-sm-9">
+					<ul class="manue_jl">
+						<li class="titi"><span><a href="javascript:">职业梦工厂|部门|职位</a></span><strong><i></i></strong></li>
+						<li><span class="jl_score" data-percent="85"><em><i></i></em>简历评分：<b data-score="85">0</b><a href="javascript:">查看简历</a></span><strong>2015-01-12</strong></li>
+						<li><span>女  1-3年经验  北京</span><strong><a href="javascript:" class="look_lianxi">查看联系方式</a></strong></li>
+						<li><span>个人信息中填写的学校  学历</span><strong><a href="javascript:" class="bupipei">不匹配</a></strong></li>
+						<li><span><p>个人信息中填写的公司如果名字很长个人信息中填写的公司如果名字很长</p>职位</span><strong><a href="javascript:" class="zhuanfa">转发</a></strong></li>
+						<li><span class="pinglun">“心有猛虎，细嗅蔷薇”</span></li>
+					</ul>
+				</dd>
+				<p class="contacth"><i>13022131422</i><b>dengwos@23.com</b></p>
+			</dl>
+			<dl>
+				<dt class="col-sm-3">
+					<h2><a href="javascript:">吴晓</a></h2>
+					<a href="javascript:"><img src="images/user_head.png" alt="职业梦" /></a>
+				</dt>
+				<dd class="col-sm-9">
+					<ul class="manue_jl">
+						<li class="titi"><span><a href="javascript:">职业梦工厂|部门|职位</a></span><strong><i></i></strong></li>
+						<li><span class="jl_score" data-percent="80"><em><i></i></em>简历评分：<b data-score="80">0</b><a href="javascript:">查看简历</a></span><strong>2015-01-12</strong></li>
+						<li><span>女  1-3年经验  北京</span><strong><a href="javascript:" class="look_lianxi">查看联系方式</a></strong></li>
+						<li><span>个人信息中填写的学校  学历</span><strong><a href="javascript:" class="bupipei">不匹配</a></strong></li>
+						<li><span><p>个人信息中填写的公司如果名字很长个人信息中填写的公司如果名字很长</p>职位</span><strong><a href="javascript:" class="zhuanfa">转发</a></strong></li>
+						<li><span class="pinglun">“心有猛虎，细嗅蔷薇”</span></li>
+					</ul>
+				</dd>
+				<p class="contacth"><i>13022131422</i><b>dengwos@23.com</b></p>
+			</dl>
+		</div>
+		<div class="fliplist">
+			<ul class="pagination">
+				<li><a href="javascript:" title="上一页" data-toggle='tooltip'>&laquo;</a></li>
+				<li class="active"><a href="javascript:">1</a></li>
+				<li><a href="javascript:">2</a></li>
+				<li><a href="javascript:">3</a></li>
+				<li><a href="javascript:">4</a></li>
+				<li><a href="javascript:" title="下一页" data-toggle='tooltip'>&raquo;</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- 简历列表 end -->
+</div>
+<!-- indexbox end -->
+</body>
+</html>

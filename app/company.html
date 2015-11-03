@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>CareerDream职业梦填写公司基本信息</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="css/bootstrap.min.css" tydive="text/css" />
+<link rel="stylesheet" href="css/resume_fill.css" tydive="text/css" />
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/base.js"></script>
+<script src="js/selectize.js"></script>
+<script src="js/company.js"></script>
+<link rel="stylesheet" href="css/selectize.default.css">
+</head>
+<body>
+<!-- company -->
+<div class="company">
+	<div id="navCodeIndex" class="hidden">99</div>
+	<div class="fillin_page">
+		<h1 style="text-indent: 50px;" class="company_h1">填写公司基本信息</h1>
+		<div class="company_box">
+		<ul>
+			<li><a href="javascript:" class="upcompimg"><img src="images/about_dflogo.png" alt="公司名称" /></a></li>
+		</ul>
+		<ul>
+			<li>公司名称<i>*</i></li>
+			<li><input type="text" name="compname" placeholder="请输入您的公司名称" /></li>
+		</ul>
+		<ul>
+			<li>公司地址</li>
+			<li><input type="text" name="compaddre" placeholder="请输入您的公司地址" /></li>
+		</ul>
+		<ul>
+			<li>公司网址</li>
+			<li><input type="text" name="compweb" placeholder="请输入您的公司网址" /></li>
+		</ul>
+		<ul>
+			<li>公司规模</li>
+			<li class="select_persons"><!-- <input type="text" name="compsite" placeholder="请选择公司规模" /> -->
+				<a href="javascript:">20人以下</a><a href="javascript:">20-50人</a><a href="javascript:">50-150人</a><a href="javascript:">150-500人</a><a href="javascript:">500人以上</a>
+			</li>
+		</ul>
+		<ul style="overflow:visible">
+			<li>公司福利</li>
+			<li>
+				<select id="select-state" name="compfuli" placeholder="最多可以选择五项公司福利">
+					<option value="">最多可以选择五项公司福利</option>
+					<option value="薪酬绩效">薪酬绩效</option>
+					<option value="股份期权">股份期权</option>
+					<option value="五险一金">五险一金</option>
+					<option value="带薪年假">带薪年假</option>
+					<option value="交通补助">交通补助</option>
+					<option value="弹性工作">弹性工作</option>
+					<option value="年度体检">年度体检</option>
+					<option value="年终分红">年终分红</option>
+					<option value="节日礼物">节日礼物</option>
+					<option value="培训机会">培训机会</option>
+				</select>
+			</li>
+			<script>
+				$('#select-state').selectize({
+					maxItems: 5,
+					plugins: ['remove_button'],
+					create: false
+					// createFilter: $('#select-state option').val()
+				});
+			</script>
+		</ul>
+		<ul>
+			<li>公司介绍</li>
+			<li><textarea name="comppre"></textarea></li>
+		</ul>
+		<ul>
+			<li><a href="javascript:" id="compsur">提交</a><a href="javascript:" id="compsee">预览</a></li>
+		</ul>
+		</div>
+		<div class="company_hide">
+			<ul>
+				<p>恭喜，公司信息填写完毕</p>
+				<span><a href="javascript:">发布新职位</a><a href="javascript:">进入我的公司主页</a></span>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- company end -->
+</body>
+</html>
